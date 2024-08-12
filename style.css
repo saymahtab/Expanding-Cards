@@ -8,7 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 65px;
 }
 .panel {
     background-position: center;
@@ -35,4 +34,18 @@
 }
 .active h2 {
     opacity: 1;
+}
+@media only screen and (max-width: 1200px){
+	.container {
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+    .panel {
+        height: 7vh;
+        width: 92%;
+        transition: 1s ease-in-out;
+    }
+    .active {
+        height: 50vh;
+    }
 }
